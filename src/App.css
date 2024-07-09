@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-weight: 14px;
+  font-style: normal;
+  background-color: #000000;
+  color: white;
+}
+
+
+.animate-navbar-down .menu-items{
+   display: block;
+  animation: moveDown 1s forwards;
+}
+
+.animate-navbar-up .menu-items{
+  display: block;
+  animation: moveUp 1s forwards;
+}
+
+@keyframes moveUp {
+    from {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-28rem);
+  }
+}
+
+
+@keyframes moveDown {
+from {
+    opacity: 0;
+    transform: translateY(-18rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
